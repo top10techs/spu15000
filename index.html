@@ -43,9 +43,11 @@
 }
 @media screen and (min-width:800px){
 .chart1{
-height:auto}
+display:none}
 }
-
+@media screen and (min-width:800px){
+.chart2{display:block}
+}
 
 
 </style>
@@ -256,7 +258,7 @@ scales: {
         ticks: {
           // forces step size to be 50 units
           stepSize: 7000,
-font:{size:6}
+font:{size:14}
         }
       }
 }
@@ -267,7 +269,7 @@ font:{size:6}
   
 </script>
 <main class="container py-5">
-<div class="chart2" style="height:300px">
+<div class="chart2" style="height:300px;display:none">
   <canvas id="myChart2"></canvas>
 </div></main>
 
