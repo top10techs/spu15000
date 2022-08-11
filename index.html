@@ -1,0 +1,1107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <style>
+#hov:hover{box-shadow: 0 4px 12px 0 #006dFF}
+#hov{box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4)}
+
+        img{
+            height: 300px;
+            object-fit: contain;
+        }
+        #carouselExampleDark,#carouselExampleCaptions,.carousel-item{
+            width: 100%;
+            height:300px; 
+            object-fit: contain;
+            
+            
+        }
+        h1{
+            padding: 20px;
+        }
+
+
+
+        @media screen and (max-width: 450px){
+        #carouselExampleDark,#carouselExampleCaptions{
+            width: 100%; 
+            padding: 20px;   
+        }
+        .frame{
+          display: none;
+        }
+      
+}
+
+
+
+</style>
+
+
+
+   
+
+   <br>
+<nav class="navbar fixed-top" style="background-color: #e3f2fd;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="font-family: 'Comfortaa', cursive;">Top10tech,<span style="font-size:10px">buy best</span></a>
+   
+
+
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="color:rgb(6, 82, 105) ;">
+                  Privacy and policy
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body" style="color: chocolate;">We donot have any privacy and policy.Please see the terms and conditions of website from which you will buy or which you will be redirected.Moreover we donot hold any users private data</div>
+              </div>
+            </div>
+        </li>
+        <li class="nav-item">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style="color:rgb(6, 82, 105) ;">
+                  Terms and conditions
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body" style="color: chocolate;">We donot have any terms and conditions.Please see the terms and conditions of website from which you will buy or which you will be redirected</div>
+              </div>
+            </div>
+        </li>
+       <li class="nav-item">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style="color:rgb(6, 82, 105) ;">
+                Contact us
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body" style="color: chocolate;">Email- juriahmed1501@gmail.com</div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+             
+
+<br><br><br>
+    <marquee width="100%" direction="left" height="50px" style="font-size:18px ;" scrollamount="8" behavior="scroll">
+      Kindly note that we have done a lot of research in searching the best phones for you. Our priority decreases as we go down the group. We have not included those phones whose data are not correctly found. We will upload it accordingly as soon as we get data. We have also a disclaimer at the bottom or footer of the page
+      </marquee>
+
+
+ <main class="container py-5" style="height:100px;" >
+
+    <h2 style="text-align:center ;" id="top_heading">Best Gaming smartphones under 15000....</h2></main> 
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const labels = [
+  "Redmi 10","Motorala G60","Motorola g31","Realme Narzo 50","Redmi Note 10 pro","Redmi note 10s","Realme C35","Realme Narzo 50A","Realme 9i","Samsung M12","Samsung F22","Realme Narzo 30 5G","Motorola G40 Fusion","Realme C21Y","Redmi Note 11","Oppo F19","Oppo A31","Samsung M21","Oppo A74 5G","Samsung M32","Redmi Note 10T 5g"
+  ];
+
+  const data = {
+    labels: labels,
+    datasets: [{
+      label: 'Avg benchmark',
+      backgroundColor: '#0d6efd',
+      borderColor: 'rgb(255, 99, 132)',
+      data: [114089.5, 169369.5 , 99189,  156271.5 ,193662,  187889,   88886.5 ,111065,
+ 122988,   69118,  102768,  166774.5, 161562,   99167,  130999.5, 111180,
+  53478  , 95749.5 ,167779   ,95913  ,161020.5],
+    }]
+  };
+
+  const config = {
+    type: 'bar',
+    data: data,
+    options: {
+responsive:true,
+maintainAspectRatio: false,
+indexAxis:'y',
+
+
+
+scales: {
+      x: {
+        title: {
+          display: true,
+          text: 'The higher the score, the better the performance'
+        }
+      },
+      y: {
+        title: {
+          display: false,
+          
+        },
+        min: 0,
+        max: 210000,
+        ticks: {
+          // forces step size to be 50 units
+          stepSize: 7000,
+font:{size:6}
+        }
+      }
+}
+}
+
+
+  };
+  
+</script>
+<main class="container py-5">
+<div style="height:300px">
+  <canvas id="myChart"></canvas>
+</div></main>
+
+<script>
+  const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
+</script>
+
+<section class="container pt-5" > 
+<div class="images_extra" style="background-image:url(https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?auto=compress&cs=tinysrgb&w=380) ; width: 380px;height: 229px;object-fit:cover;background-repeat: no-repeat;  "></div>
+
+</section>
+
+
+
+<section class="container pt-5" > 
+
+    <section class="container pt-5"> 
+
+
+        <!-- Grid-->
+
+      <div class="row pt-2 mx-n2">
+
+          <!-- Product 1 -- Redmi note 10s -->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4" >
+            <div id="hov" class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" ><img style="align-content: center;" src="https://m.media-amazon.com/images/I/81B0HJigO-L._SX522_.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" style="text-decoration:none ;">6 GB RAM, 64 GB Storage</a>
+                <h3 class="" style="color:red ;"><a href="https://amzn.to/3cIPHzj" style="color:teal;">Redmi Note 10S</a></h3>
+                <div class="d-flex justify-content-between">
+
+                  <div class="star-rating">#<b>1</b> Top10tech rating<i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><a href="https://amzn.to/3cIPHzj" style="color:white ;text-decoration: none;">View price on Amazon</a></button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+                Quick view
+                </button><!-- Modal -->
+                <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+                  <div  class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel1">Specifications</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body" style="text-align:left ;">
+             <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/ba5d873c-81c7-4432-88ca-47b2ec7e56e7.__CR0,0,1464,600_PT0_SX1464_V1___.jpg" alt=""><br><img src="https://m.media-amazon.com/images/I/71f0t04-l3L._SX679_.jpg" alt="">
+             <iframe width="370" height="500" src="https://www.youtube.com/embed/Tw8SHRBzf7c" title="Redmi Note 10S" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+             <iframe width="370" height="600" src="https://www.youtube.com/embed/RPjet39roTk" title="Redmi Note 10s Unboxing Lunched India" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                      </div>
+                    </div>
+                  </div>
+                  </div></div>
+              </div>
+            </div>
+          </div> 
+
+          <!-- Product 2 -- Oppo A74 5g -->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+            <div id="hov"class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" ><img style="align-content: center;" src="https://m.media-amazon.com/images/I/71geVdy6-OS._SX679_.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration:none ;">6 GB RAM, 128 GB Storage</a>
+                <h3 class="" style="color:red ;"><a href="https://amzn.to/3vsHOEJ" style="color:TEAL ;">Oppo A74 5G</a></h3>
+                <div class="d-flex justify-content-between">
+
+                  <div class="star-rating">#<b>2</b> Top10tech rating<i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><a href="https://amzn.to/3vsHOEJ" style="color:white ;text-decoration: none;"> View price on Amazon</a></button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                Quick view
+                </button><!-- Modal -->
+                <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true">
+                  <div  class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel2">Specifications</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body" style="text-align:left ;">
+                  <img src="https://m.media-amazon.com/images/S/aplus-media/vc/ce50b6c0-5ea3-4a61-b973-276c8f8bb254.__CR0,0,1464,600_PT0_SX1464_V1___.jpg" alt=""><br>
+                  <img src="https://m.media-amazon.com/images/S/aplus-media/vc/fa8869ca-2c9d-40e4-96dc-085f3191c944.__CR0,0,1464,600_PT0_SX1464_V1___.jpg" alt=""><br>
+                  <img src="https://m.media-amazon.com/images/S/aplus-media/vc/245a81c4-eb1d-4ec4-b56e-e8c2e1faf77f.__CR0,0,1464,600_PT0_SX1464_V1___.jpg" alt=""><br>
+                  <img src="https://m.media-amazon.com/images/S/aplus-media/vc/acb5c4f0-22d8-4baa-8eca-f90d6c52c1de.__CR0,0,1464,600_PT0_SX1464_V1___.jpg" alt="">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                      </div>
+                    </div>
+                  </div>
+                  </div></div>
+              </div>
+            </div>
+          </div> 
+          
+          <!-- Product 3 -- MOTOROLA G40 Fusion -->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+            <div id="hov" class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" ><img src="https://m.media-amazon.com/images/I/313sxf4Q6mL.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration:none ;">4 GB RAM, 64 GB Storage</a>
+                <h3 class="product-title fs-sm"><a href="https://amzn.to/3Jg3yJV" style="color:TEAL;">MOTOROLA G40 F </a></h3>
+                <div class="d-flex justify-content-between">
+                  
+                  <div class="star-rating">#<b>3</b> Top10tech rating<i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><a href="https://amzn.to/3Jg3yJV" style="color:white ; text-decoration:none  ">View price on Amazon</a> </button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                  Quick view
+                  </button><!-- Modal -->
+                  <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel3" aria-hidden="true">
+                    <div  class="modal-dialog modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel3">Specifications</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" style="text-align:left ;">
+                          <ul>   <li><span> 4 GB RAM | 64 GB ROM  </span></li>  <li><span > 17.22 cm (6.78 inch) Full HD+ Display  </span></li>  <li><span class="a-list-item"> 64MP + 8MP + 2MP | 16MP Front Camera  </span></li>  <li><span> 6000 mAh Battery  </span></li>  <li><span > Qualcomm Snapdragon 732G Processor  </span></li>  <li><span> 120Hz Refresh Rate  </span></li>  <li><span> Stock Android Experience  </span></li>  </ul>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                        </div>
+                      </div>
+                    </div>
+                    </div></div>
+              </div>
+            </div>
+            <br>
+          </div> 
+          <!-- Product 4 -- Redmi Note 10T 5g-->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+            <div id="hov" class="card product-card">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" ><img src="https://m.media-amazon.com/images/I/81oFpnDM2EL._SX679_.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration: none ;">6 GB RAM, 128 GB Storage</a>
+                <h3 class="product-title fs-sm"><a href="https://amzn.to/3BRqFIN" style="color:TEAL ;">Redmi Note 10T 5G</a></h3>
+                <div class="d-flex justify-content-between">
+                
+                  <div class="star-rating">#<b>4</b> Top10tech rating<i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><a href="https://amzn.to/3BRqFIN" style="text-decoration:none ; color:white ">View price on Amazon</a></button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+                  Quick view
+                  </button><!-- Modal -->
+                  <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel4" aria-hidden="true">
+                    <div  class="modal-dialog modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel4">Specifications</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" style="text-align:left ;">
+                          <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/4b72cef7-585c-4058-83a0-04e691877a87.__CR0,0,1464,600_PT0_SX1464_V1___.png" alt=""><br><br>
+                          <li><span> Processor: Mediatek Dimensity 700 Octa-core; 7nm process; Up to 2.2GHz clock speed; Dual 5G support  </span></li>  <li><span > Display: 6.5 inch FHD+ 2400x1080 Dot display with 90Hz high refresh rate and adaptive sync technology; ; 180Hz touch sampling,  </span></li>  <li><span> Camera: 48 MP camera sensor, 0.8μm, f/1.79, 2MP depth and 2MP Macro camera lens 8 MP Front camera  </span></li>  <li><span > Battery: 5000 mAh battery with support for 18W fast wired charging  </span></li>  <li><span> Alexa Hands-Free capable: Download the Alexa app to use Alexa hands-free. Play music, make calls, hear news, open apps, navigate, and more, all using just your voice, while on-the-go  </span></li>  <li><span> Wireless communication technology: Cellular  </span></li>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                        </div>
+                      </div>
+                    </div>
+                    </div></div>
+              </div>
+            </div>
+            <br>
+          </div> 
+          <!-- Product 5 -- Realme Narzo 50-->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+            <div class="card product-card" id="hov">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden"><img src="https://m.media-amazon.com/images/I/81X85GWtYHL._SX679_.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration:none ;">6 GB RAM, 128 Gb storage</a>
+                <h3 class="product-title fs-sm"><a href="https://amzn.to/3Pb4MaH" style="color:TEAL ;">Realme Narzo 50</a></h3>
+                <div class="d-flex justify-content-between">
+          
+                  <div class="star-rating">#<b>5</b> Top10tech rating<i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"> <a href="https://amzn.to/3Pb4MaH" style="text-decoration:none ; color:white">View price on Amazon</a></button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop5">
+                  Quick view
+                  </button><!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel5" aria-hidden="true">
+                      <div  class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel5">Specifications</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="text-align:left ;">
+                  <img src="https://m.media-amazon.com/images/I/81QRRmncQ+L._SX679_.jpg" alt="">
+                  <div>            <hr>
+                    <h5> About this item </h5>    <ul>   <li><span > Processor: MediaTek Helio G96 Octa-core processor ; Up to 2.05GHz clock speed  </span></li>  <li><span> Display: 6.6 inch FHD+ (2412x1080) display with 120Hz high refresh rate and adaptive refresh rate ; 180Hz touch sampling  </span></li>  <li><span > 5000mAh battery with 33W Dart charging support. In box - 33W Dart Charger  </span></li>  <li><span > 50MP + 2MP + 2MP Rear Camera | 16MP Front Camera  </span></li>  <li><span> 4 GB RAM | 64 GB ROM | Expandable Upto 256 GB  </span></li> </ul>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div></div></div>
+              </div>
+            </div>
+            <br>
+          </div>
+
+          <!-- Product 6 -- Redmi note 11 -->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+            <div class="card product-card" id="hov">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" ><img src="https://m.media-amazon.com/images/I/81zLNgcvlaL._SX679_.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration: none ;">4 Gb RAM, 64 GB storage</a>
+                <h3 class="product-title fs-sm"><a href="https://amzn.to/3OOfeVc" style="color:TEAL;">Redmi Note 11 </a></h3>
+                <div class="d-flex justify-content-between">
+                 
+                  <div class="star-rating">#<b>6</b> Top10tech rating<i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;">  <a href="https://amzn.to/3OOfeVc" style="text-decoration: none ;color:white ;">View price on Amazon</a></button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop6">
+                  Quick view
+                  </button><!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel6" aria-hidden="true">
+                      <div  class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel6">Specifications</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="text-align:left ;">
+                    <img src="https://m.media-amazon.com/images/I/81Z7NOX6YfL._SX679_.jpg" alt="" >
+                    <img src="https://m.media-amazon.com/images/I/81+NQQYTwPL._SX679_.jpg" alt="" >
+                    <div >            <hr>
+                      <h5> About this item </h5>    <ul >   <li><span> Display: 90Hz FHD+ (1080x2400) AMOLED display; 16.33 centimeters (6.43 inch); 20:9 aspect ratio  </span></li>  <li><span> Camera: 50 MP Quad Rear camera with 8MP Ultra-wide, 2MP Macro and Portrait lens| 13 MP Front camera  </span></li>  <li><span > Battery: 5000 mAh large battery with 33W Pro fast charger in-box and Type-C connectivity  </span></li>  <li><span> Processor: Qualcomm Snapdragon 680 Octa-core; 6nm processor; Up to 2.4GHz clock speed  </span></li>  <li><span > Memory, Storage &amp; SIM: 4GB RAM | 64GB UFS 2.2 storage expandable up to 512GB with dedicated SD card slot | Dual SIM (nano+nano) dual standby (4G+4G)  </span></li>   </ul>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div></div></div>
+              </div>
+            </div>
+            <br>
+          </div> 
+          
+          <!-- Product 7-- Realme 9i-->
+         <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+            <div class="card product-card" id="hov">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" ><img src="https://m.media-amazon.com/images/I/51u9-q9539L._SX679_.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration:none ;">4 Gb RAM, 128 Gb Storage </a>
+                <h3 class="product-title fs-sm"><a href="https://amzn.to/3cWOa9e" style="color:TEAL;">Realme 9i</a></h3>
+                <div class="d-flex justify-content-between">
+              
+                  <div class="star-rating">#<b>7</b> Top10tech rating<i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"> <a href="https://amzn.to/3cWOa9e" style="text-decoration:none ; color: white;">View price on Amazon</a></button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop7">
+                  Quick view
+                  </button><!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel7" aria-hidden="true">
+                      <div  class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel7">Specifications</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="text-align:left ;">
+                            <h6> About this item </h6>    <ul>   <li><span > 4 GB RAM | 64 GB ROM | Expandable Upto 1 TB  </span></li>  <li><span > 16.76 cm (6.6 inch) Full HD+ Display  </span></li>  <li><span > 50MP + 2MP + 2MP | 16MP Front Camera  </span></li>  <li><span > 5000 mAh Lithium ion Battery  </span></li>  <li><span > Qualcomm Snapdragon 680 (SM6225) Processor  </span></li>  </ul>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div></div>
+              </div>
+            </div>
+            <br>
+          </div> 
+          <!-- Product 8-- Redmi 10 -->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+            <div class="card product-card" id="hov">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" ><img src="https://m.media-amazon.com/images/I/31jOF0g5tVL.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration:none ;">6 gb RAM, 128GB storage</a>
+                <h3 class="product-title fs-sm"><a href="https://amzn.to/3P5LaEP" style="color:TEAL ;">Redmi 10</a></h3>
+                <div class="d-flex justify-content-between">
+            
+                  <div class="star-rating">#<b>8</b> Top10tech rating<i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-half active"></i><i class="star-rating-icon ci-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><i class="ci-cart fs-sm me-1"></i> <a href="https://amzn.to/3P5LaEP" style="text-decoration: none; color:white">View price on Amazon</a></button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop8">
+                  Quick view
+                  </button><!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel8" aria-hidden="true">
+                      <div  class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel8">Specifications</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="text-align:left ;">
+                        <img src="https://m.media-amazon.com/images/I/41gtgrLfB4L.jpg" alt="">
+       <br>
+                          <h6 > About this item </h6>    <ul >   <li><span > 6 GB RAM | 128 GB ROM | Expandable Upto 1 TB  </span></li>  <li><span > 17.02 cm (6.7 inch) HD+ Display  </span></li>  <li><span > 50MP + 2MP | 5MP Front Camera  </span></li>  <li><span > 6000 mAh Lithium Polymer Battery  </span></li>  <li><span> Qualcomm Snapdragon 680 Processor  </span></li>  </ul>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div></div>
+              </div>
+            </div>
+            <br>
+          </div> 
+          <!-- Product 9-- Oppo F19-->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2">
+            <div class="card product-card" id="hov">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" ><img src="https://m.media-amazon.com/images/I/71crCF+ogwL._SX679_.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration: none;">6 GB RAM, 128 GB storage </a>
+                <h3 class="product-title fs-sm"><a href="https://amzn.to/3cMbPsK" style="color:TEAL ;">OPPO F19</a></h3>
+                <div class="d-flex justify-content-between">
+               <div>#<b>9</b> Top10tech rating</div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><i class="ci-cart fs-sm me-1"></i> <a href="https://amzn.to/3cMbPsK" style="text-decoration: none; color:white">View price on Amazon</a></button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop9">
+                  Quick view
+                  </button><!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop9" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel9" aria-hidden="true">
+                      <div  class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel9">Specifications</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="text-align:left ;">
+                          <img src="https://m.media-amazon.com/images/I/71mxr68ctfL._SX679_.jpg" alt="">
+                          <h6 > About this item </h6>    <ul >   <li><span> 6.43" Inch (16.3cm) FHD+ AMOLED Punch-hole Display with 2400x1080 pixels. Larger screen to body ratio of 90.8%.| In-Display Fingerprint 3.0.  </span></li>  <li><span > Qualcomm Snapdragon 662 GPU 610 at 950 MHz Support 4G sim | Powerful 2 GHz Octa-core processor, support LPDDR4X memory and latest UFS 2.1 storage  </span></li>  <li><span > 5000 mAh lithium polymer battery with 33W flash charging technology.  </span></li>  <li><span> 48MP Quad Camera ( 48MP Main + 2MP Wide Angle Macro + 2MP Macro Mono Lens) | 16MP Front Camera.  </span></li>  <li><span > Memory, Storage &amp; SIM: 6GB RAM | 128GB internal memory expandable up to 256GB | Dual SIM (nano+nano) dual-standby (4G+4G).| Color OS 11.1 based on Android v11.0 operating system.  </span></li>  <li><span > 6.43" Inch (16.3cm) FHD+ AMOLED Punch-hole Display with 2400x1080 pixels. Larger screen to body ratio of 90.8%., In-Display Fingerprint 3.0.  </span></li>  <li><span > Qualcomm Snapdragon 662 GPU 610 at 950 MHz Support 4G sim, Powerful 2 GHz Octa-core processor, support LPDDR4X memory and latest UFS 2.1 storage  </span></li>  </ul>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div></div>
+              </div>
+            </div>
+            <br>
+          </div>
+          <!-- Product 10 --Narzo 50 A -->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2">
+            <div class="card product-card" id="hov">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" ><img src="https://m.media-amazon.com/images/I/81Ke5qtC6oL._SX679_.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration:none ;">4 GB RAM, 128 GB Storage</a>
+                <h3 class="product-title fs-sm"><a href="https://amzn.to/3JuIe3v" style="color:TEAL;">Narzo 50 A</a></h3>
+                <div class="d-flex justify-content-between">
+<div>#<b>10</b> Top10tech rating</div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><i class="ci-cart fs-sm me-1"></i> <a href="https://amzn.to/3JuIe3v" style="text-decoration: none; color:white">View price on Amazon</a></button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop10">
+                  Quick view
+                  </button><!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop10" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel10" aria-hidden="true">
+                      <div  class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel10">Specifications</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="text-align:left ;">
+                   <img src="https://m.media-amazon.com/images/I/81hD0Zxmm-L._SX679_.jpg" alt="">
+                   <h6> About this item </h6>    <ul >   <li><span > MediaTek Helio G85 Octa-core Processor  </span></li>  <li><span > 4 GB RAM | 128 GB ROM | Expandable Upto 256 GB  </span></li>  <li><span > 16.51 cm (6.5 inch) HD+ Display  </span></li>  <li><span > 50MP+2MP+2MP Primary Camera | 8MP Front Camera  </span></li>  <li><span > 6000 mAh Battery  </span></li>  </ul> 
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div></div>
+              </div>
+            </div>
+            <br>
+          </div>
+          <!-- Product-11-Samsung F22 10-->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2">
+            <div class="card product-card" id="hov">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" ><img src="https://m.media-amazon.com/images/I/21J+fC0z+KL.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration:none ;">6 GB RAM, 128 GB storage</a>
+                <h3 class="product-title fs-sm"><a href="https://amzn.to/3SdCEGA" style="color:TEAL ;">Samsung Galaxy F22</a></h3>
+                <div class="d-flex justify-content-between">
+     <div>#<b>11</b> Top10tech rating</div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary  disabled btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><i class="ci-cart fs-sm me-1"></i> <a href="https://amzn.to/3SdCEGA" style="text-decoration:none ;color:white">Not avaliable</a></button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop11">
+                  Quick view
+                  </button><!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop11" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel11" aria-hidden="true">
+                      <div  class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel11">Specifications</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="text-align:left ;">
+                        
+
+
+
+
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div></div>
+              </div>
+            </div>
+            <br>
+          </div>
+          <!-- Product--12-- Realme C21y-- -->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2">
+            <div class="card product-card" id="hov">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" ><img src="https://m.media-amazon.com/images/I/31CGdciadvL.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration:none ;">4 Gb RAM, 64 Gb Storage</a>
+                <h3 class="product-title fs-sm"><a href="https://amzn.to/3oGuqsO" style="color:TEAL ;">Realme C21Y</a></h3>
+                <div class="d-flex justify-content-between">
+               <div>#<b>12</b> Top10tech rating</div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary disabled btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><i class="ci-cart fs-sm me-1"></i> <a href="https://amzn.to/3oGuqsO" style="text-decoration: none ; color:white">Not avaliable </a></button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop12">
+                  Quick view
+                  </button><!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop12" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel12" aria-hidden="true">
+                      <div  class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel12">Specifications</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="text-align:left ;">
+                        
+
+
+
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div></div>
+              </div>
+            </div>
+            <br>
+          </div>
+          <!-- Product --Samsung M32--13-->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2">
+            <div class="card product-card" id="hov">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" ><img src="https://m.media-amazon.com/images/I/71F4jU7MRUS._SX522_.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration: none ;">4 GB RAM, 64 GB storage</a>
+                <h3 class="product-title fs-sm"><a href="https://amzn.to/3cOPcUv" style="color:TEAL ;">Samsung Galaxy M32</a></h3>
+                <div class="d-flex justify-content-between">
+<div>#<b>13</b> Top10tech rating</div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><i class="ci-cart fs-sm me-1"></i> <a href="https://amzn.to/3cOPcUv" style="text-decoration: none; color:white">View price on Amazon</a> </button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop13">
+                  Quick view
+                  </button><!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop13" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel13" aria-hidden="true">
+                      <div  class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel13">Specifications</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="text-align:left ;">
+                    <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/87db4a30-52ee-4e62-9ca6-0f2beb1bf0e4.__CR0,0,1464,600_PT0_SX1464_V1___.jpg" alt=""><img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/d60568d2-b0d3-4bbf-b7c9-dc5dda0215b6.__CR0,0,1464,600_PT0_SX1464_V1___.jpg" alt=""><br>
+                    <h6> About this item </h6>    <ul >   <li><span> Segment Best 16.21 centimeters (6.4-inch) Super AMOLED - Infinity U-cut display, FHD+ resolution with 90Hz Refresh rate, 800 Nits High Brightness Mode, protected by Gorilla Glass 5  </span></li>  <li><span > Versatile 64MP+8MP+2MP+2MP Quad camera setup-64MP (F 1.8) main camera + 8MP (F2.2) Ultra wide camera+ 2MP (F2.4) depth camera + 2MP (2.4) Macro Camera| 20MP (F2.2) front camera  </span></li>  <li><span> Monster 6000 mAh Battery | Memory, Storage &amp; SIM: 4GB RAM | 64GB internal memory expandable up to 1TB| SIM 1 + SIM 2 + MicroSD  </span></li>  <li><span > Android v11.0, One UI 3.1 operating system with MediaTek Helio G80 Octa Core Processor 2GHz,1.8GHz  </span></li>  <li><span > 6000mAH lithium-ion battery, 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase  </span></li>  </ul>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div></div>
+              </div>
+            </div> 
+            <br>
+          </div>
+          <!-- Product --Samsung M21--14-->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2">
+            <div class="card product-card" id="hov">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden"><img src="https://m.media-amazon.com/images/I/811lrGbXwIL._SY679_.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" style="text-decoration: none ;">4 GB RAM, 64 GB storage</a>
+                <h3 class="product-title fs-sm"><a href="https://amzn.to/3cTD70b" style="color:TEAL ;">Samsung Galaxy M21</a></h3>
+                <div class="d-flex justify-content-between">
+<div>#<b>14</b> Top10tech rating</div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><i class="ci-cart fs-sm me-1"></i> <a href="https://amzn.to/3cTD70b" style="text-decoration: none; color:white">View price on Amazon</a> </button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop14">
+                  Quick view
+                  </button><!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop14" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel14" aria-hidden="true">
+                      <div  class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel14">Specifications</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="text-align:left ;">
+                          <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/68636d6d-36a9-4265-b56b-df8dd842b27e.__CR0,0,1464,600_PT0_SX1464_V1___.jpg" alt=""><img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/ba30973c-1c38-4022-b5e3-9cd8384f1191.__CR0,0,1464,600_PT0_SX1464_V1___.jpg" alt=""><br>
+                          <h6> About this item </h6>    <ul>   <li><span > 16.21 centimeters (6.4-inch) Super AMOLED - Infinity U-cut display, FHD+ resolution with 60Hz Refresh rate, protected by Gorilla Glass 3  </span></li>  <li><span > 48MP+8MP+5MP Triple camera setup-48MP (F 2.0) main camera + 8MP (F2.2) Ultra wide camera + 5MP (F2.2) depth camera | 20MP (F2.2) front camera  </span></li>  <li><span > Monster 6000 mAh Battery | Memory, Storage &amp; SIM: 4GB RAM | 64GB internal memory expandable up to 512GB| SIM 1 + SIM 2 + MicroSD  </span></li>  <li><span > Android v11.0, One UI 3.1 operating system with Exynos 9611 Octa Core Processor 2.3GHz,1.7GHz  </span></li>  <li><span > 6000mAH lithium-ion battery, 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase  </span></li>  </ul>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div></div>
+              </div>
+            </div>
+            <br>
+          </div>
+          <!-- Product -15-Samsung--M12-->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+            <div class="card product-card" id="hov">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" ><img src="https://images-eu.ssl-images-amazon.com/images/I/416npwZlh7L._SX300_SY300_QL70_FMwebp_.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" style="text-decoration: none ;">4 GB RAM, 64 GB storage</a>
+                <h3 class="product-title fs-sm"><a href="https://amzn.to/3bn8Nux" style="color:TEAL ;">Samsung Galaxy M12</a></h3>
+                <div class="d-flex justify-content-between">
+<div>#<b>15</b> Top10tech rating</div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><i class="ci-cart fs-sm me-1"></i> <a href="https://amzn.to/3bn8Nux" style="text-decoration: none; color:white">View price on Amazon</a> </button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop15">
+                  Quick view
+                  </button><!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop15" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel15" aria-hidden="true">
+                      <div  class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="text-align:left ;">
+                            <img src="https://m.media-amazon.com/images/S/aplus-media/vc/9d5823e4-850c-408a-b92b-874e6504f768.__CR0,0,1464,600_PT0_SX1464_V1___.jpg" alt="">
+                     <img src="https://m.media-amazon.com/images/S/aplus-media/vc/29c05aff-f57f-45e0-b905-6d834922acc1.__CR0,0,1464,600_PT0_SX1464_V1___.jpg" alt="">
+                     <h6> About this item </h6>    <ul >   <li><span> 48MP+5MP+2MP+2MP Quad camera setup- True 48MP (F 2.0) main camera + 5MP (F2.2) Ultra wide camera+ 2MP (F2.4) depth camera + 2MP (2.4) Macro Camera| 8MP (F2.2) front came  </span></li>  <li><span > 6000mAH lithium-ion battery, 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase  </span></li>  <li><span > Android 11, v11.0 operating system,One UI 3.1, with 8nm Power Efficient Exynos850 (Octa Core 2.0GH. OTG Compatible: Yes  </span></li>  <li><span> 16.55 centimeters (6.5-inch) HD+ TFT LCD - infinity v-cut display,90Hz screen refresh rate, HD+ resolution with 720 x 1600 pixels resolution, 269 PPI with 16M color  </span></li>  <li><span > Memory, Storage &amp; SIM: 4GB RAM | 64GB internal memory expandable up to 1TB| Dual SIM (nano+nano) dual-standby (4G+4  </span></li>  </ul> 
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div></div>
+              </div>
+            </div>
+            <br>
+          </div>
+          <!-- Product -16-Oppo A31-->
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+            <div class="card product-card" id="hov">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden"><img style="align-content: center;" src="https://images-eu.ssl-images-amazon.com/images/I/41OBf52bnOL._SX300_SY300_QL70_FMwebp_.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration:none ;">6 GB RAM, 128 GB Storage</a>
+                <h3 class="" style="color:red ;"><a href="https://amzn.to/3Jz1YCK" style="color:TEAL ;">Oppo A31</a></h3>
+                <div class="d-flex justify-content-between">
+<div>#<b>16</b> Top10tech rating</div>
+                  <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><a href="https://amzn.to/3Jz1YCK" style="color:white ;text-decoration: none;">View price on Amazon</a></button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop16">
+                Quick view
+                </button><!-- Modal -->
+                <div class="modal fade" id="staticBackdrop16" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel16" aria-hidden="true">
+                  <div  class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel16">Specifications</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body" style="text-align:left ;">
+              <img src="https://m.media-amazon.com/images/S/aplus-media/vc/7ac4c496-8be5-4902-b21a-96ef67b82736.__CR247,0,970,600_PT0_SX970_V1___.jpg" alt="">
+              <h6 > About this item </h6>    <ul>   <li><span> 12+2+2MP triple rear camera (12MP main camera+2MP macro lens+2MP depth camera) with Portrait bokeh, macro lens, dazzle color mode, AI beautification | 8MP front camera. OTG : Supported NFC : No  </span></li>  <li><span > 16.5 centimeters (6.5-inch) waterdrop multi touch screen with an 89% screen to body ratio | 1600 x 720 pixels resolution, 269 ppi pixel density  </span></li>  <li><span > Memory, Storage &amp; SIM: 6GB RAM | 128GB internal memory expandable up to 256GB | Dual SIM (nano+nano) dual-standby (4G+4G)  </span></li>  <li><span > Android Pie v9.0 based on ColorOS 6.1 operating system with 2.3GHz Mediatek 6765 octa core processor, IMG GE8320  </span></li>  <li><span > 4230mAH lithium-polymer battery providing talk-time of 45 hours and standby time of 450 hours  </span></li>  <li><span > 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase  </span></li>  <li><span > Box also includes: USB cable, Sim tray ejecter, pre-applied screen protector and protective case, booklet with warranty card and quick guide. The box does not include earphones  </span></li>  </ul>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                      </div>
+                    </div>
+                  </div>
+                  </div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+   
+  
+   
+     
+
+
+        <section class="container pt-5">
+
+          <!-- Heading-->
+  
+          <div class="d-flex flex-wrap justify-content-between align-items-center pt-1 border-bottom pb-4 mb-4">
+            <h2 class="h3 mb-0 pt-3 me-2">Smartphones under Rs 17000</h2>
+            <div class="pt-3"><a class="btn btn-outline-accent btn-sm" href=""><i class="ci-arrow-right ms-1 me-n1"></i></a></div>
+          </div> 
+          <!-- Grid-->
+  
+        <div class="row pt-2 mx-n2">
+  
+          <!-- Product 1 -- Redmi note 10 pro -->
+          <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+            <div class="card product-card" id="hov">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden"><img style="align-content: center;" src="https://m.media-amazon.com/images/I/81S-XYJlzTL._SY679_.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1"  style="text-decoration:none ;">6 GB RAM, 128 GB Storage</a>
+                <h3 class="" style="color:red ;"><a href="https://amzn.to/3zIqMoN" style="color:TEAL ;">Redmi Note 10 pro</a></h3>
+                <div class="d-flex justify-content-between">
+
+                  <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><a href="https://amzn.to/3zIqMoN" style="color:white ;text-decoration: none;">View price on Amazon</a></button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop_1">
+                Quick view
+                </button><!-- Modal -->
+                <div class="modal fade" id="staticBackdrop_1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel_1" aria-hidden="true">
+                  <div  class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel_1">Specifications</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body" style="text-align:left ;">
+                  <img src="https://m.media-amazon.com/images/S/aplus-media/vc/f8db3d55-2cb6-4e3b-b9a2-5ab2660e6294.__CR0,0,1464,600_PT0_SX1464_V1___.jpg" alt="">
+                  <img src="https://m.media-amazon.com/images/S/aplus-media/vc/53fd0868-69ea-49d2-91d3-9468e3cc14af.__CR0,0,1464,600_PT0_SX1464_V1___.jpg" alt="">
+                  <h6> About this item </h6>    <ul>   <li><span > Processor: Qualcomm Snapdragon 732G with Kryo 470 Octa-core; 8nm process; Up to 2.3GHz clock speed  </span></li>  <li><span > Camera: 64 MP Quad Rear camera with 8MP Ultra-wide, 5MP Telemacro and Portrait lens| 16 MP Front camera  </span></li>  <li><span > Display: 120Hz high refresh rate FHD+ (1080x2400) AMOLED Dot display; 16.9 centimeters (6.67 inch); 20:9 aspect ratio; HDR 10 support  </span></li>  <li><span > Battery: 5020 mAH large battery with 33W fast charger in-box and Type-C connectivity  </span></li>  <li><span > Memory, Storage &amp; SIM: 6GB RAM | 128GB UFS 2.2 storage expandable up to 512GB with dedicated SD card slot | Dual SIM (nano+nano) dual standby (4G+4G)  </span></li>  </ul>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                      </div>
+                    </div>
+                  </div>
+                  </div></div>
+              </div>
+            </div>
+          </div> 
+          <!-- Product 2 -- Realme Narzo 30 5G -->
+          <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+            <div class="card product-card" id="hov">
+              <div class="product-card-actions d-flex align-items-center">
+              </div><a class="card-img-top d-block overflow-hidden" ><img style="align-content: center;" src="https://m.media-amazon.com/images/I/719tm7l723L._SY679_.jpg" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" style="text-decoration:none ;">6 GB RAM, 128 GB Storage</a>
+                <h3 class="" style="color:red ;"><a style="color: TEAL;" href="https://amzn.to/3zIqMoN">Realme Narzo 30 5G </a></h3>
+                <div class="d-flex justify-content-between">
+
+                  <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body card-body-hidden">
+                <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button" style="font-size:20px ;"><a href="https://amzn.to/3zIqMoN" style="color:white ;text-decoration: none;">View price on Amazon</a></button>
+                <div class="text-center"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop_2">
+                Quick view
+                </button><!-- Modal -->
+                <div class="modal fade" id="staticBackdrop_2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel_2" aria-hidden="true">
+                  <div  class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel_2">Specifications</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body" style="text-align:left ;">
+                        <h6> About this item </h6>    <ul>   <li><span > 6 GB RAM 128 GB ROM Expandable Upto 256 GB  </span></li>  <li><span > 16.51 cm 6.5 inch Full HD+ Display  </span></li>  <li><span > 48MP + 2MP + 2MP 16MP Front Camera  </span></li>  <li><span> 5000 mAh Battery  </span></li>  <li><span > MediaTek Helio G95 Processor  </span></li>  <li><span> Connector type: USB Type C  </span></li>  </ul>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                      </div>
+                    </div>
+                  </div>
+                  </div></div>
+              </div>
+            </div>
+          </div> 
+          </div>
+</section>
+
+
+
+<!-- Card -->
+
+
+<!-- <main class="container py-5">
+  <h2>Other similar categories</h2>
+    <div class="bd-example bd-example-placeholder-cards d-flex justify-content-around" style="display:inline-block ;">
+      <div class="card" >
+ 
+        <img src="https://images.pexels.com/photos/840996/pexels-photo-840996.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" style="object-fit:fit ;">
+      
+        <div class="card-body">
+          <h5 class="card-title">Smart Phones for officials</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-danger">Shop now</a>
+        </div>
+      </div>
+      </div>
+    <div class="bd-example bd-example-placeholder-cards d-flex justify-content-around">
+      <div class="card">
+     
+        <img src="https://d4donline.com/blog/content/images/2022/02/table-fan-buying-guide.jpg" alt="">
+      
+        <div class="card-body">
+          <h5 class="card-title">Table fans</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Shop now</a>
+        </div>
+      </div>
+      </div>
+    <div class="bd-example bd-example-placeholder-cards d-flex justify-content-around">
+      <div class="card">
+    
+        <img src="https://i01.appmifile.com/webfile/globalimg/products/pc/mi-air-purifier-3H/replace_03.jpg" alt="">
+      
+        <div class="card-body">
+          <h5 class="card-title">Air purifiers</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Shop now</a>
+        </div>
+      </div>
+      </div>
+    </main> -->
+  
+
+
+
+
+
+
+
+<!-- 
+              <div class="col-md-8">
+                <div class="d-flex flex-wrap justify-content-between align-items-center pt-3 pb-2">
+                  <h2 class="h4 mb-3">Latest videos from Cartzilla channel</h2><a class="btn btn-outline-accent btn-sm mb-3" href="#">More videos<i class="ci-arrow-right fs-xs ms-1 me-n1"></i></a>
+                </div>
+                <div class="row g-0">
+                  <div class="col-lg-4 col-6 mb-3"><a class="d-block text-decoration-0 px-2" href="https://www.youtube.com/embed/vS93u75NnPo" data-bs-toggle="video" lg-uid="lg0">
+                      <div class="position-relative mb-2"><span class="badge bg-dark position-absolute bottom-0 end-0 mb-2 me-2">6:16</span><img class="w-100" src="img/home/video/cover01.jpg" alt="Video cover"></div>
+                      <h6 class="fs-sm pt-1">5 New Cool Gadgets You Must See on Cartzilla - Cheap Budget</h6></a></div>
+                  <div class="col-lg-4 col-6 mb-3"><a class="d-block text-decoration-0 px-2" href="https://www.youtube.com/embed/B6LaYgGogf0" data-bs-toggle="video" lg-uid="lg1">
+                      <div class="position-relative mb-2"><span class="badge bg-dark position-absolute bottom-0 end-0 mb-2 me-2">7:27</span><img class="w-100" src="img/home/video/cover02.jpg" alt="Video cover"></div>
+                      <h6 class="fs-sm pt-1">5 Super Useful Gadgets on Cartzilla You Must Have in 2020</h6></a></div>
+                  <div class="col-lg-4 col-6 mb-3"><a class="d-block text-decoration-0 px-2" href="https://www.youtube.com/embed/kB-ROfRS9V4" data-bs-toggle="video" lg-uid="lg2">
+                      <div class="position-relative mb-2"><span class="badge bg-dark position-absolute bottom-0 end-0 mb-2 me-2">6:20</span><img class="w-100" src="img/home/video/cover03.jpg" alt="Video cover"></div>
+                      <h6 class="fs-sm pt-1">Top 5 New Amazing Gadgets on Cartzilla You Must See</h6></a></div>
+                  <div class="col-lg-4 col-6 mb-3 d-lg-none"><a class="d-block text-decoration-0 px-2" href="https://www.youtube.com/embed/sJK67XXE_Rg" data-bs-toggle="video" lg-uid="lg3">
+                      <div class="position-relative mb-2"><span class="badge bg-dark position-absolute bottom-0 end-0 mb-2 me-2">6:11</span><img class="w-100" src="img/home/video/cover04.jpg" alt="Video cover"></div>
+                      <h6 class="fs-sm fw-bold pt-1">5 Amazing Construction Inventions and Working Tools Available...</h6></a></div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+
+
+
+
+
+
+
+<!-- 
+
+          <div  style="background-color: rgb(58, 175, 210); left: 0%;">
+            <div class="d-lg-flex justify-content-between align-items-center ps-lg-4"><img class="d-block order-lg-2 me-lg-n5 flex-shrink-0" src="" alt="Summer Collection">
+              <div class="position-relative mx-auto me-lg-n5 py-5 px-4 mb-lg-5 order-lg-1" style="max-width: 42rem; z-index: 10;">
+                <div class="pb-lg-5 mb-lg-5 text-center text-lg-start text-lg-nowrap">
+                  <h3 class="h2 text-light fw-light pb-1 from-start">Has just arrived!</h3>
+                  <h2 class="text-light display-5 from-start delay-1">Huge Summer Collection</h2>
+                  <p class="fs-lg text-light pb-3 from-start delay-2">Air conditioners,coolers..... etc &amp; much more...</p>
+                  <div class="d-table scale-up delay-4 mx-auto mx-lg-0"><a class="btn btn-primary" href="">Shop Now<i class="ci-arrow-right ms-2 me-n1"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section class="container py-lg-4 mb-4">
+            <h2 class="h3 text-center pb-4">Shop by brand</h2>
+            <div class="row">
+              <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="#"><img class="d-block mx-auto" src="https://cartzilla.createx.studio/img/shop/brands/01.png" style="width: 150px;" alt="Brand"></a></div>
+              <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="#"><img class="d-block mx-auto" src="https://cartzilla.createx.studio/img/shop/brands/02.png" style="width: 150px;" alt="Brand"></a></div>
+              <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="#"><img class="d-block mx-auto" src="https://cartzilla.createx.studio/img/shop/brands/10.png" style="width: 150px;" alt="Brand"></a></div>
+              <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="#"><img class="d-block mx-auto" src="https://cartzilla.createx.studio/img/shop/brands/04.png" style="width: 150px;" alt="Brand"></a></div>
+              <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="#"><img class="d-block mx-auto" src="https://cartzilla.createx.studio/img/shop/brands/05.png" style="width: 150px;" alt="Brand"></a></div>
+              <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="#"><img class="d-block mx-auto" src="https://cartzilla.createx.studio/img/shop/brands/06.png" style="width: 150px;" alt="Brand"></a></div>
+              <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="#"><img class="d-block mx-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQilV8kp80lMTNa9BDrtH5MU2e-i8MVxCPTjQ&usqp=CAU" style="width: 150px;" alt="Brand"></a></div>
+              
+
+              <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="#"><img class="d-block mx-auto" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBhUTBwgWFRIWFxUZFxYYFiEXGRkXGR4WFyAfIBUZHigiGR8lHRYZITEhJS0vLi4uHR8/ODUyNygtLjcBCgoKDg0OGxAQGi0lHyUuLTczLzErLS0tKzctLS8tLTAwNS0tLS0tLS0tNSstKy0tLS0tLTUrLS0tLS0tLS0tK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAwADAQEAAAAAAAAAAAAABQYHAQMEAgj/xAA+EAACAQIDBQUECAQGAwAAAAAAAQIDEQQFBgcSITFhQVFxgaETIpGSFBUyQlKisbIjNmNyFmKCg8LRJSYz/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAECAwQFBv/EACYRAQACAgEEAgEFAQAAAAAAAAABAgMRIQQSMUEyYVEiIzOx8BP/2gAMAwEAAhEDEQA/AKWADF8yAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADvwmExONxChg6EpzfKMYuT+C7OpbcBsx1Fio3rxp0uk53fwgn+oiJlpTFe/xhSwX6tsozuEL0sXQk+68o/wDEq+dabzjI+OZYGUY/jXvQ+eN0vOw1K18GSvMwiQHwRN5hpLP8twrqY7LZRgmk3vRlxbSXCMm3dtLggzitp8QhAWrKtn+o8ygpLBqlF8nVe4/k4y+KRLPZNnO7wx1C/deX67pPbLWvT5bRuKs/BZM30NqHKYOVbA78FzlSe+vlXvehW07rgRrTO1LV4tGgE1l+k89zLBKrgcuc6cr2lvRV7Np8HJPmmfWS6TzzO43wOAe5+OfuR8m/teVxqUxivPpBgv8AT2T51KH8TG0E+68n67p4cx2a6jwcb0qMKq/pz4/LJK/kT2yvPTZYjfapwOytRq4eq44ilKMlzjJOLXinxR8EMXAJDKMlzPOau7leClUa5tK0V4zdkvC5a8Nsqz6rC9avRh03nJ+kbCImWlMN7/GFEBecZstz+hC9CdKp0U3Fv5kl6lSzLLMdlWI3MywkqcuxSVr+EuUvIakvhvT5Q8YOTghkAAkAAAAAA78DhK2PxsKWGjedSSjHxbt8O06CzbN3TWtcP7Xvnbx3JWEeV8de60RLT6dHJtnmnN6Uby4Jy+/VqPs/XhySM9zXaXqHGVH9EqRoQ7FCKk7dZTTv5JFg23RrOGFavuXrJ92+/Z287KXqZaWtOuHb1WW1LdleIhZcPr7VFCpf61cukoQafwimaBozXVDUkvo2cYeEask0rcadRW4rdlezt2cbr4GMkppaNWWpsKsPfe9vS5dykm/LdvfpciJljh6jJFo52mtpWlqenswUsDG1CrfdXPckucb93G68+42/E1aNDDOeJklCKcm3ySXG/kUXbRKmtM0977Xtlu/LO/oTW0iNWWisR7D8Mb/2qUd70uX8PQpWMd79v1P9qLqDalmFeu45FTjTprlOUd6cutnwiujTZX1rrVCnf64l8kLfDcK6cFNy8y3UZLTuZaZpnajX+kqGoacXBtL2sVuuPWUeTXVWt3M9W1HSWGlgnjcspqMo8aqXKUX9+y7Vfi+1eBlLtbibylKls0tmHNYP378//n29SYnccurBec1LUvzr2bMV/wCkUL/1P3zIPWW0X6qxUsPkdGMpwe7KcuMYtfdjFNXa5dy6k3szv/gWhu8/4v75mG4uNWOLmsR9tTkpf3Xd/W5MzqGmfNbHir2+4T1bXmqKs7/W8l0UIJftJTJtp2eYOqvrHdrw7bxUJ26SjZfFFHBTcuCufJE73Lcc8yjK9eaeVbAte0cW6VS1pKSveEul+DXYZdo7TlTP9QKjWTjCF5VuxxjF2cejb4fHuNE2NRqrTlRz+w60tz5YJ28z52eTw8tX5n7G1/bO3hv1b+pfW9O+cdcs0vPt7tUamy7RGAhQy3CRdTd9ykuEYx5b0nz4u/Vu/iZxjNoWp8VUvHMFTX4YQil+ZN+p9bUI1o62re25NUnD+3ciuH+pS87lUImZ25uo6i/fNYnUQtuA2jalwlS9TGRqr8NSC/WCizSMnzPKNoOSSp4zDJSVt+m3dwb5SjLu52fR3MLL5sbjWeqKjhfcVCW93Xcqe758H6is86W6bPebxW3MSquo8nq5DnNShWd91+7L8UHxi/hz6pkYXzbJKm9T09z7Sox3vmnb0KGRMcubPWKZJrAACGQAAAAAHbhcRVwmJjUw87ThJSi+6Saa/Q6gExOm5ZbmmS7QMidLFxSnZb9O9pwkvvQfau5+T7imZpsqzihVf1diadWHZd7k/NWa87+RQ6VSpRqKVGo4yXKUW014NcUWXAbQNTYKNlmG+l2VIKX5uDfxLbifLt/748kfuxz+YerD7MtS1Z2nSpwXfKpw/Kmy9aY0flujqbxGZ4yMqqTvUl7sILt3U+18r8yi19pupasLQrU4dY0+P5m0VvNM4zLNql8yx06j7FJ8F4RXBeSETEEZcGPmkTM/aa2hap/xLmK+jpqhTUlTvwcm+cmuy9lZdy62N1xUqEcO1inHcl7r3uT3uFuPfex+YZ/ZN42o/wAkVvGn++JNZ8telyzPfef95VfUGyqrKu56fxMVF8fZVG1u9IzSd10fxIBbNdTudvo0PH2it/2RuV6x1BlcFHCZnJxXKM7VFbpvptLomSz2n6kcLKVHx9nx/dYjhjNumtzMTCx6Z2YRwmIVXUFeM913VKF9y6/FJpby6Wt4nl2nazw+Lw7wmU1d6Lf8aa5cPuJ9vFcXy4W77UvN9U55nEN3H5lNwf3FaEX4xilfzuQw7vUIv1FYr2Y41tvOzFpaIoX/AKn75kXqzQWE1FU+kZPiowqT4v71Op193k+qvfuJLZr/ACJR/wB398zGspz7Nsml/wCMx86a/CnePySvH0LTPDqy5KVx0i8biYT9XZnqanKyw9OXWNRW/Mk/Qk8n2U5jVqp5xi4U4dsab35vpdpKPjxI6ltO1LCFpVKUurp8fRpHhzDXepcfBqpmThF9lNKn+ZLe9Sv6XNvpo51MtG1PqTLNGZKsNlO77ZR3adNcdy9/em/Xjxk/NmXaU1BW09nka6TmneNSN+MoSs3x77pNdV1IZycpNyd2+Lfa349pwRMs8nUWtaLRxrw3POcnyXaBlkauDxSU0vcqR4uP+WcPHsfLsKFjNl+oqFT+CqVRdjjPd9JJW9SpYDH4zLq+/gMVOnLvjJq/j3royzYXaVqbDxtPEwn1nTV/y2J3E+Ws5sOXnJGp+nqwGy3P69VfS50qUe1uW/LyjFWfxRe8PSyPZ1kb36vvS4t8PaVZpcEo93TkvUzjGbRtTYmNo4yNP+ymk/jK7RWMVisRjK7ni68pzfOUpOT+L/QbiPBGfFj/AI45/MvTnma186zWpXxX2pvl2RiuCivBJep4ACrimZmdyAAIAAAAAAAAAAAAABq6L5qjaJ9f5JPD/Vm5v7vve03rbslLluruKGBE6aUy2pExHsAAZgAAvmmtoiyPIYYf6s393f8Ae9pu33pSly3X3lEOANtL5bXiIn0AAMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH/2Q==" style="width: 150px;" alt="Brand"></a></div>
+              <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="#"><img class="d-block mx-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxTVCe_ye0cjihHd2s6AHvB99unC-Ai2RvsA&usqp=CAU" style="width: 150px;" alt="Brand"></a></div>
+              <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="#"><img class="d-block mx-auto" src="img/shop/brands/10.png" style="width: 150px;" alt="Brand"></a></div>
+              <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="#"><img class="d-block mx-auto" src="img/shop/brands/11.png" style="width: 150px;" alt="Brand"></a></div>
+              <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="#"><img class="d-block mx-auto" src="img/shop/brands/12.png" style="width: 150px;" alt="Brand"></a></div>
+            </div>
+          </section> -->
+
+          <main class="container py-5"><h3 style="text-align:center ;"><a href="#top_heading">Go to the top of page</a></h3></main>
+          <main class="container py-5">
+          <div class="alert alert-danger d-flex align-items-center" role="alert">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+            <div>
+             <a id="disclaimer">Note that we have done research according to our own way. The results might differ if you compare with another.We have arranged the phones according to the performance for gaming not anything else.Moreover there are some other phones also at this price range. We are not including them due to lack of some data.As soon we get data we will update it soon.</a> 
+            </div>
+          </div><br>
+
+          <a href="https://github.com/juri1501/fireblog/blob/main/bar_chart.png">
+          <img id="bar_graph" src="https://github.com/juri1501/fireblog/blob/main/bar_chart.png?raw=true" alt="" width="100%" height="600x"  > </a><br><br><br>
+
+
+          <h6>Credit section</h6>
+          <p><a href="https://www.freepik.com/vectors/game-console">Game console vector created by pch.vector - www.freepik.com</a><br>
+          <a href="https://www.freepik.com/photos/vr-headset">Vr headset photo created by fxquadro - www.freepik.com</a>
+        
+        </p>
+          </main>
+
+    
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script> -->
+     
+    <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  
+    <script async="" src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+<!-- Script for typing effect text -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed(".auto-input",{
+    strings:["Kindly note that we have done a lot of research in searching the best phones for you. Our priority decreases as we go down the group."],
+    typeSpeed:80,
+    backSpeed:50,
+    loop:true
+  })
+</script>
+  </body>
+</html>
