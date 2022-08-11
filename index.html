@@ -42,14 +42,6 @@ display:none}
 .chart2{display:block}
 }
 
-.custom-popover {
-  --bs-popover-max-width: 200px;
-  --bs-popover-border-color: var(--bs-primary);
-  --bs-popover-header-bg: var(--bs-primary);
-  --bs-popover-header-color: var(--bs-white);
-  --bs-popover-body-padding-x: 1rem;
-  --bs-popover-body-padding-y: .5rem;
-}
 
 </style>
 
@@ -390,13 +382,13 @@ const config3 = {
 
 
 <script>
-var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover1"]'))
 var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
   return new bootstrap.Popover(popoverTriggerEl)
 })
 </script>
 
-<button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
+<button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover1" data-bs-placement="bottom" data-bs-content="Bottom popover">
   Popover on top
 </button>
 <!-- Modal -->
