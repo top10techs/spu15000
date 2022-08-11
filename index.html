@@ -138,7 +138,7 @@ display:none}
   };
 
   const config = {
-    type: 'doughnut',
+    type: 'bar',
     data: data,
     options: {
 responsive:true,
@@ -282,8 +282,63 @@ font:{size:10}
 
 
 
-<script>   </script>
 
+<script>  
+
+ const labels3 = [
+  "Redmi 10","Motorala G60","Motorola g31","Realme Narzo 50","Redmi Note 10 pro","Redmi note 10s","Realme C35","Realme Narzo 50A","Realme 9i","Samsung M12","Samsung F22","Realme Narzo 30 5G","Motorola G40 Fusion","Realme C21Y","Redmi Note 11","Oppo F19","Oppo A31","Samsung M21","Oppo A74 5G","Samsung M32","Redmi Note 10T 5g"
+  ];
+
+  const data3 = {
+    labels: labels3,
+    datasets: [{
+      label: 'Avg benchmarks',
+      backgroundColor: Object.values(Utils.CHART_COLORS),
+      borderColor: 'black',
+      data: [114089.5, 169369.5 , 99189,  156271.5 ,193662,  187889,   88886.5 ,111065,
+ 122988,   69118,  102768,  166774.5, 161562,   99167,  130999.5, 111180,
+  53478  , 95749.5 ,167779   ,95913  ,161020.5],
+    }]
+  };
+
+const config3 = {
+  type: 'doughnut',
+  data: data3,
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'top',
+      },
+      title: {
+        display: true,
+        text: 'Chart.js Doughnut Chart'
+      }
+    }
+  },
+};
+
+
+const DATA_COUNT = 5;
+const NUMBER_CFG = {count: DATA_COUNT, min: 0, max: 100};
+
+
+
+
+ </script>
+
+</script>
+<main class="container py-5 chart2">
+<div class="chart3" style="height:300px">
+  <canvas id="myChart3" style="height:300px"></canvas>
+</div></main>
+
+<script>
+  const myChart3 = new Chart(
+    document.getElementById('myChart3'),
+    config3
+  );
+</script>
 
 
 
