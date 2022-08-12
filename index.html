@@ -318,15 +318,6 @@ const labels3 = ["Note 10 pro","Price range best"]
   
   }],
 
-options: {
-    plugins: {
-      datalabels: {
-        formatter: (value) => {
-          return value + '%';
-        }
-      }
-    }
-  }
 
 };
 
@@ -342,6 +333,11 @@ const config3 = {
       title: {
         display: true,
         text: 'Chart.js Doughnut Chart'
+      },
+datalabels: {
+        formatter: (value) => {
+          return value + '%';
+        }
       }
     }
   },
