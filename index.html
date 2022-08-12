@@ -334,12 +334,11 @@ const config3 = {
         display: true,
         text: 'Chart.js Doughnut Chart'
       },
-datalabels: {
-            color: 'white',
-            formatter: function(value, context) {                  
-              return Math.round(value/context.chart.getDatasetMeta(0).total * 100) + "%" ;
-            }
-          }
+labels: {
+          render: 'percentage',
+          fontColor: ['green', 'white', 'red'],
+          precision: 2
+        }
     }
   },
 };
