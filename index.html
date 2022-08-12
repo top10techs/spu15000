@@ -233,6 +233,7 @@ font:{size:6}
  122988,   69118,  102768,  166774.5, 161562,   99167,  130999.5, 111180,
   53478  , 95749.5 ,167779   ,95913  ,161020.5],
     }]
+
   };
 
   const config2 = {
@@ -315,7 +316,18 @@ const labels3 = ["Note 10 pro","Price range best"]
         'rgb(55, 25, 211)',
     ],
   
-  }]
+  }],
+
+options: {
+    plugins: {
+      datalabels: {
+        formatter: (value) => {
+          return value + '%';
+        }
+      }
+    }
+  }
+
 };
 
 const config3 = {
