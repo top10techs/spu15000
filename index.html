@@ -159,13 +159,13 @@ display:none}
       data: [114089.5, 169369.5 , 99189,  156271.5 ,193662,  187889,   88886.5 ,111065,
  122988,   69118,  102768,  166774.5, 161562,   99167,  130999.5, 111180,
   53478  , 95749.5 ,167779   ,95913  ,161020.5],
-      data1:data.sort()
+  
     }]
   };
 
   const config = {
     type: 'bar',
-    data: data1,
+    data: data,
     options: {
 responsive:true,
 maintainAspectRatio: false,
@@ -184,7 +184,8 @@ scales: {
       },
       y: {
         title: {
-          display: false,
+          display: true,
+          text:'This is a title'
           
         },
         min: 0,
