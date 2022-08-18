@@ -386,6 +386,40 @@ labels:{
  </script>
 
 
+<style>
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+</style>
+
+
+<script>
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 20;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+</script>
 
 
 
@@ -400,7 +434,7 @@ labels:{
       <div class="row pt-2 mx-n2">
 
           <!-- Product 1 -- Redmi note 10s -->
-           <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4" >
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4 reveal" >
             <div id="hov" class="card product-card" >
               <div class="product-card-actions d-flex align-items-center">
               </div><a class="card-img-top d-block overflow-hidden" ><img style="align-content: center;" src="https://m.media-amazon.com/images/I/81B0HJigO-L._SX522_.jpg" alt="Product"></a>
@@ -463,7 +497,7 @@ labels:{
           </div> 
 
           <!-- Product 2 -- Oppo A74 5g -->
-           <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4 reveal">
             <div id="hov"class="card product-card">
               <div class="product-card-actions d-flex align-items-center">
               </div><a class="card-img-top d-block overflow-hidden" ><img style="align-content: center;" src="https://m.media-amazon.com/images/I/71geVdy6-OS._SX679_.jpg" alt="Product"></a>
@@ -573,7 +607,7 @@ labels:{
           </div> 
           
           <!-- Product 3 -- MOTOROLA G40 Fusion -->
-           <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4">
+           <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4 reveal">
             <div id="hov" class="card product-card">
               <div class="product-card-actions d-flex align-items-center">
               </div><a class="card-img-top d-block overflow-hidden" ><img src="https://m.media-amazon.com/images/I/313sxf4Q6mL.jpg" alt="Product"></a>
