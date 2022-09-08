@@ -1179,7 +1179,7 @@ display:none}
   
   <br><br><br><br><br><br><br>
   <div class="table-responsive">
-  <table class="table">
+  <table class="table" id="tab">
   <thead>
     <tr>
       <th scope="col" style="background-color:white;position:sticky;left:0px">Smartphone name</th>
@@ -1351,6 +1351,10 @@ display:none}
 </table>
 </div>  
   
+<script>$(document).ready(function () {
+  $('#tab').DataTable();
+  $('.dataTables_length').addClass('bs-select');
+});</script>
 
 
   </section>
