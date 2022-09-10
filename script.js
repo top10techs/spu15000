@@ -1,7 +1,7 @@
  // get selected row
  // display selected row data in text input
             
-var table = document.getElementById("table"),rIndex;
+var table = document.getElementById("tab"),rIndex;
             
 for(var i = 1; i < table.rows.length; i++){
     table.rows[i].onclick = function(){
