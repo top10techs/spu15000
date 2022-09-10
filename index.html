@@ -1224,7 +1224,7 @@ table.dataTable thead .sorting_desc_disabled:before {
   <tbody>
     <tr>
       <th scope="row" style="position:sticky;left:0px;background-color:white">Poco M4 pro 5g</th>
-      <td><input>MediaTek Dimensity 810 edit</input></td>
+      <td>MediaTek Dimensity 810 </td>
       <td class="table-success">2.4 GHz</td>
       <td class="table-success">4/6/8 GB</td>
       <td>2133 Mhz</td>
@@ -1373,7 +1373,24 @@ table.dataTable thead .sorting_desc_disabled:before {
 
   </tbody>
 </table>
-</div>  
+</div> 
+
+
+<!-- Update Button -->
+        <div class="updateBtn">
+            <button  onclick="editTableDisplay()">Update data</button>
+        </div>
+<!-- Edit table -->
+        <div class="editTable">
+            <div class="left">First Name: </div><div class="right"><input type="text" name="fname" id="fname"></div><br><br>
+            <div class="left">Last Name: </div><div class="right"><input type="text" name="lname" id="lname"></div><br><br>
+            <div class="left">Country: </div><div class="right"><input type="text" name="country" id="country"></div><br><br>
+            <div class="left">Mobile number: </div><div class="right"><input type="number" name="mNumber" id="mNumber"></div><br><br>
+            <button onclick="editRow();" class="editRowBtn">Update</button><br><br>
+        </div>        
+<!-- link JavaScript -->
+        <script src="script.js"></script>
+ 
   
 <script>
 $('#tab').DataTable();
