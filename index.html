@@ -16,10 +16,6 @@
 <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
 
-tructions, or add the following lines to your page.
-
-<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 
 </head>
   <body style="background-color:#f6f7f9">
@@ -1353,12 +1349,7 @@ display:none}
       <td>334281</td>
       <td>1791</td>
       <td>6000 mAh</td>
-      <td>
-<py-script>
-a=20
-b=a+20
-print(b)</py-script>
-</td> 
+      <td id="javas"><script>let x=20   </script> </td> 
       <td>Mono</td>
       <td>Yes</td>
     </tr>
@@ -1377,6 +1368,7 @@ print(b)</py-script>
 $('#tab').DataTable();
 </script>
 
+<script> let y=x+22;document.getElementById("javas").innerHTML = y;</script>
 
   </section>
   
@@ -1384,7 +1376,6 @@ $('#tab').DataTable();
   
   
   
-  <py-script>print('This is python here')</py-script>
  
   
   
