@@ -124,7 +124,7 @@ But is not true. The backup of your phone depends on lots of factors. It depends
 $(document).ready(function(){
   $("#myInput").on("keyup", function() {
     var value = $(this).val().toLowerCase();
-    $("#body ").css('color','blue').filter(function() {
+    $("#body span").css('color','blue').filter(function() {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
   });
