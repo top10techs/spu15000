@@ -8,7 +8,7 @@
   </head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <body>
+  <body id="body">
 <div style="padding:12px;width:100%;background-color:#e3f2fd"><h3>Hiveoftech</h3></div><br>
 <p style="text-align:center"><b>Best smartphone under 15000</b><br><b>Free trial</b></p>
 <div style="padding:15px">
@@ -124,7 +124,7 @@ But is not true. The backup of your phone depends on lots of factors. It depends
 $(document).ready(function(){
   $("#myInput").on("keyup", function() {
     var value = $(this).val().toLowerCase();
-    $("#myTable tr").filter(function() {
+    $("#body").filter(function() {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
   });
