@@ -1,30 +1,15 @@
- // get selected row
- // display selected row data in text input
-            
-var table = document.getElementById("tab"),rIndex;
-            
-for(var i = 1; i < table.rows.length; i++){
-    table.rows[i].onclick = function(){
-        rIndex = this.rowIndex;
-        console.log(rIndex);
+//exporte les données sélectionnées
+var $table = $('#table');
+    $(function () {
+        $('#toolbar').find('select').change(function () {
+            $table.bootstrapTable('refreshOptions', {
+                exportDataType: $(this).val()
+            });
+        });
+    })
 
-        document.getElementById("fname").value = this.cells[1].innerHTML;
-        document.getElementById("lname").value = this.cells[2].innerHTML;
-        document.getElementById("country").value = this.cells[3].innerHTML;
-        document.getElementById("mNumber").value = this.cells[4].innerHTML;
-    };
-}
-            
-            
-// edit the row
-function editRow(){
-    table.rows[rIndex].cells[1].innerHTML = document.getElementById("fname").value;
-    table.rows[rIndex].cells[2].innerHTML = document.getElementById("lname").value;
-    table.rows[rIndex].cells[3].innerHTML = document.getElementById("country").value;
-    table.rows[rIndex].cells[4].innerHTML = document.getElementById("mNumber").value;
-}
+		var trBoldBlue = $("table");
 
-// Data Update Table Here
-function editTableDisplay(){
-    document.querySelector('.editTable').setAttribute('style', 'display: block;')
-}
+	$(trBoldBlue).on("click", "tr", function (){
+			$(this).toggleClass("bold-blue");
+	});
