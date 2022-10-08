@@ -8,7 +8,7 @@
   </head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <body id="body">
+  <body class="body">
 <div style="padding:12px;width:100%;background-color:#e3f2fd"><h3>Hiveoftech</h3></div><br>
 <p style="text-align:center"><b>Best smartphone under 15000</b><br><b>Free trial</b></p>
 <div style="padding:15px">
@@ -145,7 +145,7 @@ $(document).ready(function(){
 <script>
 $('#searchBar').keyup(function() {
   var search_term = $('#searchBar').val();
-  $('.monitor').removeHighlight().highlight(search_term);
+  $('.body').removeHighlight().highlight(search_term);
 });
 </script>
 
