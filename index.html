@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+
+
+
+<div class="container">
+<h1>Bootstrap Table</h1>
+
+<p>A table with third party integration  extension Filter control extension Data export</a> pour exporter</p>
+
+<div id="toolbar">
+		<select class="form-control">
+				<option value="">Export Basic</option>
+				<option value="all">Export All</option>
+				<option value="selected">Export Selected</option>
+		</select>
+</div>
+
+<table id="table" 
+			 data-toggle="table"
+			 data-search="true"
+			 data-filter-control="true" 
+			 data-show-export="true"
+			 data-click-to-select="true"
+			 data-toolbar="#toolbar"
+       class="table-responsive">
+	<thead>
+		<tr>
+			<th data-field="state" data-checkbox="true"></th>
+			<th data-field="prenom" data-filter-control="input" data-sortable="true">First Name</th>
+			<th data-field="date" data-filter-control="select" data-sortable="true">Date</th>
+			<th data-field="examen" data-filter-control="select" data-sortable="true">Examination</th>
+
+
+<script>
+//exporte les données sélectionnées
+var $table = $('#table');
+    $(function () {
+        $('#toolbar').find('select').change(function () {
+            $table.bootstrapTable('refreshOptions', {
+                exportDataType: $(this).val()
+            });
+        });
+    })
+
+		var trBoldBlue = $("table");
+
+	$(trBoldBlue).on("click", "tr", function (){
+			$(this).toggleClass("bold-blue");
+	});
+
+</script>
+  </body>
+</html>
