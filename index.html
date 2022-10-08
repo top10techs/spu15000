@@ -155,6 +155,7 @@ $('#searchBar').keyup(function() {
 <!-- .................................................................................   -->
   
   <style> td{} 
+          td.cell-h{display:none}
           div,caption{display:none}
           div#dtable{display:block}</style>
   
@@ -261,12 +262,27 @@ $('#searchBar').keyup(function() {
 				</div>
 			</div>
 		<div id="dtable" class="table-responsive">	
-		<table class="table specs-table">
-			
+		<table id="table" class="table specs-table table-responsive" 
+			 data-toggle="table"
+			 data-search="true"
+			 data-filter-control="true" 
+			 data-show-export="true"
+			 data-click-to-select="true"
+			 data-toolbar="#toolbar">
+			<thead>
+		<tr>
+			<th data-field="state" data-checkbox="true"></th>
+			<th data-field="prenom" data-filter-control="input" data-sortable="true">Mobile</th>
+			<th data-field="date" data-filter-control="select" data-sortable="true">Category</th>
+			<th data-field="examen" data-filter-control="select" data-sortable="true">Announced</th>
+			<th data-field="note" data-sortable="true">Note</th>
+		</tr>
+	</thead>
 			<tbody>
 				
 							<tr>
-								<td class="cell-h">Category</td>
+								<td> Redminote 10s </td>
+                                                                <td class="cell-h">Category</td>
 								<td class="cell-s">Mid-range</td>
 							</tr>
 						
@@ -1272,7 +1288,23 @@ $('#searchBar').keyup(function() {
   
   
   
-  
+  <script>
+//exporte les données sélectionnées
+var $table = $('#table');
+    $(function () {
+        $('#toolbar').find('select').change(function () {
+            $table.bootstrapTable('refreshOptions', {
+                exportDataType: $(this).val()
+            });
+        });
+    })
+
+		var trBoldBlue = $("table");
+
+	$(trBoldBlue).on("click", "tr", function (){
+			$(this).toggleClass("bold-blue");
+	});
+</script>
   
   
   
