@@ -154,10 +154,10 @@ $('#searchBar').keyup(function() {
   
 <!-- .................................................................................   -->
   
-  <style> td{} 
-          td.cell-h{display:none}
+  <style> 
+          td.cell-h,tr{display:none}
           div,caption{display:none}
-          div#dtable{display:block}</style>
+          div#dtable,tr.special{display:block}</style>
   
   <article id="the-app">
 		
@@ -280,7 +280,8 @@ $('#searchBar').keyup(function() {
 	</thead>
 			<tbody>
 				
-							<tr>
+						<tr class="special">	<tr>
+                                                            		<td class="bs-checkbox "><input data-index="0" name="btSelectItem" type="checkbox"></td>
 								<td> Redminote 10s </td>
                                                                 <td class="cell-h">Category</td>
 								<td class="cell-s">Mid-range</td>
@@ -506,7 +507,7 @@ $('#searchBar').keyup(function() {
 							<tr>
 								<td class="cell-h">Fingerprint scanner</td>
 								<td class="cell-s">Yes, in home button</td>
-							</tr>
+							</tr>  </tr>
 						
 			</tbody>
 		</table>
