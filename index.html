@@ -120,11 +120,16 @@ But is not true. The backup of your phone depends on lots of factors. It depends
   </table>
 </div>
 
+<style>
+.highlight { background-color: yellow }
+</style>
+
 <script>
 $(document).ready(function(){
   $("#myInput").on("keyup", function() {
     var value = $(this).val().toLowerCase();
-    $(".specs-table td").css('color','red').filter(function() {
+var search_term = $('#myinput').val();
+    $(".specs-table tr").removeHighlight().highlight(search_term).filter(function() {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
   });
@@ -133,9 +138,6 @@ $(document).ready(function(){
 
 
 
-<style>
-.highlight { background-color: yellow }
-</style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://johannburkard.de/resources/Johann/jquery.highlight-4.js"></script>
@@ -145,7 +147,7 @@ $(document).ready(function(){
 <script>
 $('#searchBar').keyup(function() {
   var search_term = $('#searchBar').val();
-  $('.specs-table').removeHighlight().highlight(search_term);
+  $('.specs-table ').removeHighlight().highlight(search_term);
 });
 </script>
 
