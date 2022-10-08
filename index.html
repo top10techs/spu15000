@@ -157,7 +157,7 @@ $('#searchBar').keyup(function() {
   <style> 
           td.cell-h{display:none}
           div,caption{display:none}
-          div#dtable,{display:block}</style>
+          div#dtable{display:block}</style>
   
   <article id="the-app">
 		
@@ -261,7 +261,14 @@ $('#searchBar').keyup(function() {
 					
 				</div>
 			</div>
-		<div id="dtable" class="table-responsive">	
+		<div id="dtable" class="">
+<span id="toolbar">
+		<select class="form-control">
+				<option value="">Export Basic</option>
+				<option value="all">Export All</option>
+				<option value="selected">Export Selected</option>
+		</select>
+</span>	
 		<table id="table" class="table specs-table table-responsive"
 			 data-toggle="table"
 			 data-search="true"
@@ -325,7 +332,7 @@ $('#searchBar').keyup(function() {
 				
 						
 								<td class="cell-h" style="border:1px solid black">Type</td>
-								<td class="cell-s" style="border:1px solid black">AMOLED</td>
+								<td class="cell-s" >AMOLED</td>
 							
 					
 							
