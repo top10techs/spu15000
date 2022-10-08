@@ -133,22 +133,21 @@ $(document).ready(function(){
 
 
 
+<style>
+.highlight { background-color: yellow }
+</style>
 
-<script src="https://github.com/tankchintan/highlight-js" type="text/javascript"></script> <!-- https://github.com/tankchintan/highlight-js -->
-      <script>
-      function highlightme()
-      {
-        var str=document.getElementById('search').value;
-        var strarray=str.split(" ");
-        void($('#content').removeHighlight().highlight(n)); //pass string array to function
-      }
-      </script>
-      <style type="text/css">
-        .highlight{ background-color:yellow; }
-      </style>
-<input type="text" name="search" id="search" onblur="highlightme()" />
-        <div id="content">Highlight Highlight Test Multiple</div>
-        <a href="JavaScript:$('#content').removeHighlight();">Clear
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://johannburkard.de/resources/Johann/jquery.highlight-4.js"></script>
+
+<input type="search" id="searchBar" name="searchQuery" placeholder="Search for name...">
+<div class='monitor'>Lorem ipsum "dolor" dolor</div>
+<script>
+$('#searchBar').keyup(function() {
+  var search_term = $('#searchBar').val();
+  $('.monitor').removeHighlight().highlight(search_term);
+});
+</script>
 
   </body>
 </html>
