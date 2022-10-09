@@ -193,20 +193,21 @@ var $table = $('#table');
 		</select>
 </div>
 
-		<table id="table2" class="table-responsive"
-			 data-toggle="table2"
+		<table id="table2" 
+			 data-toggle="table"
 			 data-search="true"
 			 data-filter-control="true" 
 			 data-show-export="true"
 			 data-click-to-select="true"
-			 data-toolbar="#toolbar2">
+			 data-toolbar="#toolbar2"
+                          class="table-responsive">
 			<thead>
 		<tr>
-			<th data-field="state" data-checkbox="true"></th>
-			<th data-field="prenom" data-filter-control="input" data-sortable="true">Mobile</th>
-			<th data-field="date" data-filter-control="select" data-sortable="true">Category</th>
-			<th data-field="examen" data-filter-control="select" data-sortable="true">Announced</th>
-			<th data-field="note" data-sortable="true">Note</th>
+			<th data-field="ste" data-checkbox="true"></th>
+			<th data-field="penom" data-filter-control="input" data-sortable="true">Mobile</th>
+			<th data-field="dae" data-filter-control="select" data-sortable="true">Category</th>
+			<th data-field="exmen" data-filter-control="select" data-sortable="true">Announced</th>
+			<th data-field="nte" data-sortable="true">Note</th>
 		        
 
 
@@ -219,9 +220,7 @@ var $table = $('#table');
 								<td> Redminote 10s </td>
                                                                 <td class="">Category</td>
 								<td class="">Mid-range</td>
-							
-						
-							
+
 								<td class="">Announced</td>
 								
 							
@@ -268,18 +267,18 @@ var $table = $('#table');
   
   <script>
 //exporte les données sélectionnées
-var $table2 = $('#table2');
+var $table = $('#table2');
     $(function () {
         $('#toolbar2').find('select').change(function () {
-            $table2.bootstrapTable('refreshOptions', {
+            $table.bootstrapTable('refreshOptions', {
                 exportDataType: $(this).val()
             });
         });
     })
 
-		var trBoldBlue2 = $("table2");
+		var trBoldBlue2 = $("table");
 
-	$(trBoldBlue2).on("click", "tr", function (){
+	$(trBoldBlue).on("click", "tr", function (){
 			$(this).toggleClass("bold-blue");
 	});
 </script>
