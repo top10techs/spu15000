@@ -1186,7 +1186,7 @@ var $table = $('#table');
 
 <p>A table with third party integration  extension Filter control extension Data export</a> pour exporter</p>
 
-<div id="toolbar">
+<div id="toolbar1">
 		<select class="form-control">
 				<option value="">Export Basic</option>
 				<option value="all">Export All</option>
@@ -1194,13 +1194,13 @@ var $table = $('#table');
 		</select>
 </div>
 
-<table id="table" 
-			 data-toggle="table"
+<table id="table1" 
+			 data-toggle="table1"
 			 data-search="true"
 			 data-filter-control="true" 
 			 data-show-export="true"
 			 data-click-to-select="true"
-			 data-toolbar="#toolbar"
+			 data-toolbar="#toolbar1"
        class="table-responsive">
 	<thead>
 		<tr>
@@ -1302,16 +1302,16 @@ var $table = $('#table');
 
 <script>
 //exporte les données sélectionnées
-var $table = $('#table');
+var $table1 = $('#table1');
     $(function () {
-        $('#toolbar').find('select').change(function () {
-            $table.bootstrapTable('refreshOptions', {
+        $('#toolbar1').find('select').change(function () {
+            $table1.bootstrapTable('refreshOptions', {
                 exportDataType: $(this).val()
             });
         });
     })
 
-		var trBoldBlue = $("table");
+		var trBoldBlue = $("table1");
 
 	$(trBoldBlue).on("click", "tr", function (){
 			$(this).toggleClass("bold-blue");
