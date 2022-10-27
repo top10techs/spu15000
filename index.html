@@ -150,8 +150,24 @@ which is not very good for the <span>phone</span>.</p>
 <p><b>Battery capacity</b>-Most people think that higher the MAh of battery the better it is.
 But is not true. The backup of your phone depends on lots of factors. It depends on software.</p>
 </div>
+<button type="button" class="btn btn-primary" id="example"
+        data-bs-toggle="popover" data-bs-placement="right"
+        data-bs-custom-class="custom-popover"
+        data-bs-title="Custom popover"
+        data-bs-content="This popover is themed via CSS variables.">
+  Custom popover
+</button>
 
-  
+
+
+  <script>
+
+const popover = new bootstrap.Popover('.popover-dismiss', {
+  trigger: 'focus'
+})
+const exampleEl = document.getElementById('example')
+const popover = new bootstrap.Popover(exampleEl, options)
+</script>
   
   </body>
 </html>
