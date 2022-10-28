@@ -157,7 +157,14 @@ But is not true. The backup of your phone depends on lots of factors. It depends
         data-bs-content="This popover is themed via CSS variables.">
   Custom popover
 </button>
+<script>
 
+document.querySelectorAll('[data-bs-toggle="popover"]')
+
+    .forEach(popover => {
+      new bootstrap.Popover(popover)
+    })
+</script>
 
 
   <script>
